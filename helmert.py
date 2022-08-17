@@ -54,7 +54,7 @@ Xs_secon = sum(secon_coor['X']) / len(secon_coor)
 # The coordinates of common points with respect to the center of gravity
 for i in range(len(first_coor)):
     ctr.append([first_coor['Y'][i] - Ys_first, first_coor['X'][i] - Xs_first,
-                secon_coor['Y'][i] - Ys_secon, secon_coor['X'][i] - Ys_secon])
+                secon_coor['Y'][i] - Ys_secon, secon_coor['X'][i] - Xs_secon])
 ctr = pd.DataFrame(ctr, columns=['DYp', 'DXp', 'DY', 'DX'])
 
 for i in range(len(ctr)):
