@@ -68,7 +68,7 @@ for i in range(len(first_coor)):
     DYDYp.append(ctr['DY'][i] * ctr['DYp'][i])
     DXDXp.append(ctr['DX'][i] * ctr['DXp'][i])
 k11 = (sum(DXDXp) + sum(DYDYp)) / sum(Sp2)
-k12 = (sum(DYDXp) - sum(DXDYp)) / sum(Sp2)
+k12 = (sum(DXDYp) - sum(DYDXp)) / sum(Sp2)
 k01 = Xs_secon - Xs_first * k11 + Ys_first * k12
 k02 = Ys_secon - Ys_first * k11 - Xs_first * k12
 lamda = (k11 ** 2 + k12 ** 2) ** 0.5
